@@ -13,6 +13,13 @@
       "email": "t.mohamed.29102003@gmail.com",
       "role": "admin",
       "password": "123456"
+    },
+    {
+      "id": "2a6e",
+      "name": "soutnance",
+      "email": "alice@example.com",
+      "role": "admin",
+      "password": "password123"
     }
   ],
   "sessions": [
@@ -39,6 +46,20 @@
           "maxParticipants": 10,
           "remainingPlaces": 10
         }
+      ],
+      "createdBy": 1
+    },
+    {
+      "id": "af9a",
+      "themeId": "1",
+      "date": "2024-07-21T17:07:27.000Z",
+      "duration": "12",
+      "price": "6",
+      "minParticipants": "1",
+      "availableSlots": [
+        "19:07",
+        "19:09",
+        "19:08"
       ],
       "createdBy": 1
     }
