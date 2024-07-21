@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SessionList from '../../components/session/sessionList';
-import EmployeeList from '../../components/Employee/EmployeeList';
+import SessionList from '../session/sessionList';
+import EmployeeList from '../Employee/EmployeeList';
 
 const Dashboard: React.FC = () => {
   return (

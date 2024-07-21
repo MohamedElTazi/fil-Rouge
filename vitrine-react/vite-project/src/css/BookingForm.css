@@ -5,7 +5,9 @@
     max-width: 500px;
 
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -32,7 +34,8 @@
 
 #Booking form input,
 #Booking form textarea,
-#Booking select {
+#Booking select
+,#booking option {
     width: 80%;
     height: 50px;
     margin: 5px 0px;
@@ -77,7 +80,7 @@ background-color: #FF1414;
 }
 
 #Booking li {
-    background-color: #1e3d59;
+    background-color: #d62839;
     color: white;
     padding: 10px;
     margin-bottom: 5px;

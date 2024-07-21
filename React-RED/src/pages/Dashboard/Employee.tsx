@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
 import Toastify from 'toastify-js';
 import 'toastify-js/src/toastify.css';
-import '../../css/employeeForm.css'; // Assurez-vous d'avoir un fichier CSS pour le style général
+import {
+  Box,
+  TextField,
+  MenuItem,
+  Select,
+  InputLabel,
+  FormControl,
+  Button,
+  Alert,
+  Typography
+} from '@mui/material';
 
 const EmployeeForm: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [role, setRole] = useState('admin'); // Par défaut, admin
+  const [role, setRole] = useState('admin');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
 
@@ -63,59 +73,64 @@ const EmployeeForm: React.FC = () => {
   };
 
   return (
-    <div className="employee-form-container">
-      <h2>Formulaire de création d'employé</h2>
-      {error && <p className="error-message">{error}</p>}
-      <form onSubmit={handleSubmit} className="employee-form">
-        <div className="form-group">
-          <label htmlFor="name">Nom :</label>
-          <input
-            type="text"
-            id="name"
+    <Box sx={{ p: 3, maxWidth: 600, mx: 'auto' }}>
+      <Typography variant="h4" gutterBottom>
+        Formulaire de création d'employé
+      </Typography>
+      {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
+      <form onSubmit={handleSubmit}>
+        <Box mb={2}>
+          <TextField
+            fullWidth
+            label="Nom"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
-        </div>
+        </Box>
 
-        <div className="form-group">
-          <label htmlFor="email">Email :</label>
-          <input
+        <Box mb={2}>
+          <TextField
+            fullWidth
+            label="Email"
             type="email"
-            id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </div>
+        </Box>
 
-        <div className="form-group">
-          <label htmlFor="role">Rôle :</label>
-          <select
-            id="role"
-            value={role}
-            onChange={(e) => setRole(e.target.value)}
-            required
-          >
-            <option value="admin">Admin</option>
-            <option value="staff">Staff</option>
-          </select>
-        </div>
+        <Box mb={2}>
+          <FormControl fullWidth>
+            <InputLabel>Rôle</InputLabel>
+            <Select
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
+              label="Rôle"
+              required
+            >
+              <MenuItem value="admin">Admin</MenuItem>
+              <MenuItem value="staff">Staff</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
 
-        <div className="form-group">
-          <label htmlFor="password">Mot de passe :</label>
-          <input
+        <Box mb={2}>
+          <TextField
+            fullWidth
+            label="Mot de passe"
             type="password"
-            id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-        </div>
+        </Box>
 
-        <button type="submit" className="submit-button">Créer</button>
+        <Button type="submit" variant="contained" color="error">
+          Créer
+        </Button>
       </form>
-    </div>
+    </Box>
   );
 };
 

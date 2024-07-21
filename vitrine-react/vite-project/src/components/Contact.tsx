@@ -56,7 +56,7 @@ function Contact() {
   };
 
   return (
-    <div id='contact'>
+    <div className="contact">
       <h1>CONTACTEZ NOUS</h1>
       <form onSubmit={handleSubmit}>
         <input

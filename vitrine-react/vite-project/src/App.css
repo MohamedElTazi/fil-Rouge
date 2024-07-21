@@ -482,16 +482,3 @@ display:block;}
             height:400px;
         }
     }
-/* src/App.css */
-body.light {
-    background-color: white;
-    color: black;
-  }
-  
-  body.dark {
-    background-color: black;
-    color: white;
-  }
-  
-  /* Vos autres styles */
-  

@@ -2,9 +2,8 @@ import '../css/offer.css'; // Assurez-vous de lier votre fichier CSS
 
 function Offer() {
   return (
-    <div id='offer'>
-        <p></p>
-        <p></p>
+    <div className='offer'>
+
         <h1 className='h1'>Nos offres</h1>
         <div className='details'>
           <div className='room'>

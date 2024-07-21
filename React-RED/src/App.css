@@ -1,13 +1,6 @@
-/* src/App.css */
-body.light {
-    background-color: white;
-    color: black;
+
+  select {
+    color: rgb(240, 13, 13);
   }
-  
-  body.dark {
-    background-color: black;
-    color: white;
-  }
-  
   /* Vos autres styles */
   

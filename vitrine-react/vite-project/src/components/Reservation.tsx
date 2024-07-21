@@ -290,7 +290,7 @@ const BookingForm: React.FC = () => {
                     onClick={() => setSelectedTimeSlot(slot.time)}
                     style={{
                       cursor: 'pointer',
-                      color: selectedTimeSlot === slot.time ? 'blue' : 'black',
+                      color: selectedTimeSlot === slot.time ? 'red' : 'black',
                     }}
                   >
                     Créneau {slot.time} - reste {slot.remainingPlaces} place{slot.remainingPlaces > 1 ? 's' : ''}

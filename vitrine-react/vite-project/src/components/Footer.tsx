@@ -1,4 +1,4 @@
-import Logo from '../images/logo.png';
+
 import '../css/footer.css'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
@@ -21,10 +21,11 @@ return (
             <p>RER : A</p>
             <p>Bus : 57, N11</p>
           </div>
-          <div className="sb_footer-links_div">
-            <h4>Coming soon on</h4>
-          </div>
+       
           <div className="socialmedia">
+
+         <div className='textsocialmedia'>  Coming soon on:</div> 
+        
             <a href="https://www.facebook.com/" target='blank'><FaFacebook/></a>
             <a href="https://www.twitter.com/" target='blank'><FaTwitter/></a>
             <a href="https://www.instagram.com/" target='blank'><FaInstagram/></a>

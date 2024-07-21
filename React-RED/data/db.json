@@ -11,89 +11,11 @@
       "id": "dcdc",
       "name": "Mohamed TAZI",
       "email": "t.mohamed.29102003@gmail.com",
-      "role": "staff",
+      "role": "admin",
       "password": "123456"
     }
   ],
   "sessions": [
-    {
-      "id": "667e",
-      "date": "2024-07-14T15:16:14.361Z",
-      "duration": "60",
-      "price": 400,
-      "minParticipants": "6",
-      "availableSlots": [
-        {
-          "time": "17:16",
-          "maxParticipants": 10,
-          "remainingPlaces": 2
-        },
-        {
-          "time": "18:16",
-          "maxParticipants": 10,
-          "remainingPlaces": 10
-        },
-        {
-          "time": "12:12",
-          "maxParticipants": 8,
-          "remainingPlaces": 5
-        }
-      ],
-      "createdBy": 0,
-      "theme": "1"
-    },
-    {
-      "id": "668f",
-      "date": "2024-07-15T14:00:00.000Z",
-      "duration": "90",
-      "price": 450,
-      "minParticipants": "4",
-      "availableSlots": [
-        {
-          "time": "14:00",
-          "maxParticipants": 8,
-          "remainingPlaces": 8
-        },
-        {
-          "time": "16:00",
-          "maxParticipants": 8,
-          "remainingPlaces": 6
-        },
-        {
-          "time": "18:00",
-          "maxParticipants": 8,
-          "remainingPlaces": 8
-        }
-      ],
-      "createdBy": 0,
-      "theme": "2"
-    },
-    {
-      "id": "669g",
-      "date": "2024-07-16T10:00:00.000Z",
-      "duration": "120",
-      "price": 500,
-      "minParticipants": "6",
-      "availableSlots": [
-        {
-          "time": "10:00",
-          "maxParticipants": 12,
-          "remainingPlaces": 12
-        },
-        {
-          "time": "13:00",
-          "maxParticipants": 12,
-          "remainingPlaces": 9
-        },
-        {
-          "time": "16:00",
-          "maxParticipants": 12,
-          "remainingPlaces": 12
-        }
-      ],
-      "createdBy": 0,
-      "theme": "3"
-    },
     {
       "id": "f6b4",
       "themeId": "1",
@@ -101,49 +23,27 @@
       "duration": "30",
       "price": "35",
       "minParticipants": "3",
-      "availableSlots": [
-        "10:09"
-      ],
+      "availableSlots": [],
       "createdBy": 0
     },
     {
-      "id": "da58",
-      "themeId": "2",
-      "date": "2024-07-20T08:11:33.000Z",
-      "duration": "10",
-      "price": "26",
-      "minParticipants": "2",
+      "id": "4e62",
+      "themeId": "1",
+      "date": "2024-07-15T16:12:25.000Z",
+      "duration": "1",
+      "price": "1",
+      "minParticipants": "1",
       "availableSlots": [
-        "10:11"
+        {
+          "time": "18:34",
+          "maxParticipants": 10,
+          "remainingPlaces": 10
+        }
       ],
       "createdBy": 1
     }
   ],
   "reservations": [
-    {
-      "id": "1",
-      "email": "client1@example.com",
-      "sessionId": 1,
-      "slot": "2024-07-05T10:00:00",
-      "participants": 3,
-      "status": "confirmed"
-    },
-    {
-      "id": "c58b",
-      "firstName": "Mohamed",
-      "lastName": "Tazi",
-      "email": "t.mohamed.29102003@gmail.com",
-      "selectedRoom": "1",
-      "slot": "2024-07-14T15:16:00.000Z"
-    },
-    {
-      "id": "10ac",
-      "firstName": "MOHAMED RAYAN",
-      "lastName": "MAZOUNI",
-      "email": "mazounirayan@gmail.com",
-      "selectedRoom": "1",
-      "slot": "2024-07-15T15:16:00.000Z"
-    },
     {
       "id": "c3d7",
       "firstName": "rayan",
@@ -151,7 +51,8 @@
       "email": "mazouni@gmail.com",
       "numberOfPeople": 6,
       "selectedRoom": "1",
-      "slot": "2024-07-14T16:16:00.000Z"
+      "slot": "2024-07-14T16:16:00.000Z",
+      "status": "pending"
     },
     {
       "id": "8610",
@@ -160,16 +61,8 @@
       "email": "mazouni@gmail.com",
       "numberOfPeople": 8,
       "selectedRoom": "1",
-      "slot": "2024-07-14T15:16:00.000Z"
-    },
-    {
-      "id": "1713",
-      "firstName": "MOHAMED RAYAN",
-      "lastName": "MAZOUNI",
-      "email": "g@g.com",
-      "numberOfPeople": 6,
-      "selectedRoom": "1",
-      "slot": "2024-07-14T15:16:00.000Z"
+      "slot": "2024-07-14T15:16:00.000Z",
+      "status": "confirmed"
     },
     {
       "id": "6c8b",
@@ -178,16 +71,8 @@
       "email": "a@a.com",
       "numberOfPeople": 4,
       "selectedRoom": "2",
-      "slot": "2024-07-15T12:00:00.000Z"
-    },
-    {
-      "id": "2561",
-      "firstName": "MOHAMED RAYAN",
-      "lastName": "MAZOUNI",
-      "email": "a@m.Com",
-      "numberOfPeople": 4,
-      "selectedRoom": "2",
-      "slot": "2024-07-15T16:00:00.000Z"
+      "slot": "2024-07-15T12:00:00.000Z",
+      "status": "confirmed"
     }
   ],
   "contacts": [
