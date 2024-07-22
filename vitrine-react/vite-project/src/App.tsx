@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 import BookingForm from './components/Reservation';
+import MentionsLegales from './MentionsLegale';
 import './App.css';
 
 

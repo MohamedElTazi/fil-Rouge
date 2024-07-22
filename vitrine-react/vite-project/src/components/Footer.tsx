@@ -1,6 +1,7 @@
 
 import '../css/footer.css'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import MentionsLegales from '../MentionsLegale';
 
 
 function Footer() {
@@ -10,7 +11,7 @@ return (
         <div className="sb_footer-links">
         <div className="sb_footer-links_div">
             <h4>Entreprise</h4>
-            <p>contact.evasionmystique @email.com</p>
+            <p>contact.evasionmystique@email.com</p>
             <p>242 rue du Faubourg Saint-Antoine, 75012 Paris</p>
             <p>06 06 06 06 06</p>
           </div>
