@@ -3,8 +3,8 @@ import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import { Box, CssBaseline, ThemeProvider } from '@mui/material';
 import Loader from './common/Loader';
 import PageTitle from './components/PageTitle';
-import Sidbar from './components/SideBar/Sidbar';
-import Topbar from './components/NavBar/navbar';
+import Sidbar from './components/Sidebar/Sidbar';
+import Topbar from './components/NavBar/Navbar';
 import SessionList from './pages/session/sessionList';
 import CreateSession from './pages/session/Creation';
 import EmployeeForm from './pages/Dashboard/Employee';
@@ -16,7 +16,7 @@ import CreateTheme from './pages/session/theme';
 import EmployeeList from './pages/Employee/EmployeeList';
 import { ColorModeContext, useMode } from './components/theme/theme';
 import './App.css';
-import ReservationManager from './pages/Reservation/reservationList';
+import ReservationManager from './pages/Reservation/ReservationList';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);

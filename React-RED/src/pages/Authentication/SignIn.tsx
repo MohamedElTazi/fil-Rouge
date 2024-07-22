@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from './AuthContext'; // Assurez-vous que ce chemin est correct
-import './Login.css'; // Assurez-vous que le fichier CSS est dans le bon chemin
+import { useAuth } from './AuthContext'; 
+import './Login.css'; 
 
 const SignIn: React.FC = () => {
   const [email, setEmail] = useState('');

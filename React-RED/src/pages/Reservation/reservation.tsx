@@ -7,7 +7,6 @@ import {
   FormControl,
   InputLabel,
   Select,
-  FormHelperText,
   Typography,
   SelectChangeEvent
 } from '@mui/material';

@@ -13,7 +13,7 @@ export const login = async (email: string, password: string) => {
         backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
       }).showToast();
 
-      return data[0]; // Renvoie les détails de l'utilisateur
+      return data[0];
     } else {
       Toastify({
         text: 'Email ou mot de passe invalide.',

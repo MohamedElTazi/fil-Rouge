@@ -9,7 +9,7 @@ const CreateTheme: React.FC = () => {
     photo: ''
   });
 
-  const [themes, setThemes] = useState([]);
+  const [, setThemes] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:5000/themes')
@@ -30,7 +30,6 @@ const CreateTheme: React.FC = () => {
       .then(response => response.json())
       .then(newTheme => {
         console.log('Thème créé:', newTheme);
-        // Optionally, clear form or handle newly created theme
       })
       .catch(error => console.error('Erreur lors de la création du thème:', error));
   };

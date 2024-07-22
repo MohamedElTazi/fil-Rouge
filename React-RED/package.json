@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "clean": "depcheck && npm prune",
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "server": "json-server --watch data/db.json --port 5000"
@@ -20,6 +20,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.16.1",
     "@mui/material": "^5.16.4",
+    "autoprefixer": "^10.4.19",
     "flatpickr": "^4.6.13",
     "moment": "^2.30.1",
     "react": "^18.2.0",

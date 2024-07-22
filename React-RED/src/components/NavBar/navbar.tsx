@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Box, IconButton, useTheme } from "@mui/material";
-import { ColorModeContext, tokens } from "../theme/theme";
+import { ColorModeContext } from "../theme/theme";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 
@@ -8,9 +8,8 @@ interface TopbarProps {
   setIsSidebar: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Topbar: React.FC<TopbarProps> = ({ setIsSidebar }) => {
+const Topbar: React.FC<TopbarProps> = () => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
 
   return (

@@ -2,22 +2,7 @@ import React, { useState, useEffect } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { format } from 'date-fns';
-import fr from 'date-fns/locale/fr';
-import {
-  Box,
-  Typography,
-  Button,
-  MenuItem,
-  Select,
-  InputLabel,
-  FormControl,
-  TextField,
-  IconButton,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle
-} from '@mui/material';
+import {  Box, Typography, Button, MenuItem, Select, InputLabel, FormControl, TextField, IconButton, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
